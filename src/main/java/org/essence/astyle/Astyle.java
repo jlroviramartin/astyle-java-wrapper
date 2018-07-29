@@ -48,6 +48,8 @@ public interface Astyle {
     }
 
     default public void javaBeautify(String file) throws IOException {
-        astyle("--style=java", "-n", file);
+        astyle("--style=java",
+               "-n",
+               file);
     }
 }
